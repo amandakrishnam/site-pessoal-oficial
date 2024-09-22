@@ -23,12 +23,11 @@
 
 body {
     height: 100vh;
-    max-width: 100%;
-    overflow-x: hidden;
+    width: 100vw;
     font-family: var(--font-family-texto);
 }
 
-.menu {   /* estava como nav */
+nav {
     display: flex;
     align-items: center;
     width: 100vw;
@@ -94,19 +93,11 @@ nav li {
     text-align: center;
 }
 
+/* .dropbtn{
+    display: none;
+} */
+
 @media (max-width: 767.98px) {
-
-    nav {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .menu{
-        display: flex;
-        justify-content: center;
-    }
-
 
     .nav-titulo h1 {
         display: none;
@@ -132,5 +123,5 @@ nav li {
         text-align: center;
         text-wrap: wrap;
         margin: 4%;
-    }
+    }     
 }
