@@ -24,7 +24,7 @@
 body {
     height: 100vh;
     max-width: 100%;
-    overflow-x: hidden; /*propriedade para evitar rolagem horizontal*/
+    overflow-x: hidden;
     font-family: var(--font-family-texto);
 }
 
