@@ -22,6 +22,9 @@ h2 {
 p {
     font-family: var(--cor-texto-destaque);
     font-size: 1.5rem;
+}
+
+.paragrafo-destaque{
     text-align: center;
 }
 

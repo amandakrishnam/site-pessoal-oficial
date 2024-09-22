@@ -1,6 +1,37 @@
-.secao-sobre {
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
+.apresentacao{
+    margin: 5% 5%;
+    display: flex; 
     align-items: center;
+    justify-content:space-between; 
+    gap: 4rem;
 }
+
+.apresentacao-conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+    gap: 2.5rem; 
+}
+
+.foto-sobre{
+    width: 40%;
+}
+
+.apresentacao-conteudo-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.apresentacao-educacao{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.apresentacao-conteudo-educacao{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
