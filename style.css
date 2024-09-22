@@ -35,8 +35,9 @@ nav {
     font-family: var(--fonte-family-texto);
     font-size: 1.5rem;
     font-weight: 800;
-
-    
+    top: 0;
+    position: sticky;
+    background: white;
 }
 
 .nav-titulo{
@@ -72,12 +73,13 @@ nav a:hover{
     cursor: pointer;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: flex-end;
     gap: var(--espaco-primario);
 }
 
-li {
+nav li {
     list-style: none;
 }
+
