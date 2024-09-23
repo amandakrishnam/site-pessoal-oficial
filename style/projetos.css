@@ -8,6 +8,11 @@
     align-items: center;
 }
 
+.projeto-imagem {
+    width: 80px;
+    height: 619px;
+}
+
 #projetos {
     width: 100vw;
     padding: 2rem;
@@ -33,4 +38,3 @@ h5 {
     font-size: 2rem;
     padding: 2rem;
 }
-
