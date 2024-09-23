@@ -105,3 +105,14 @@ nav ul {
 nav li {
     list-style: none;
 }
+
+@media (max-width: 768px){
+    .nav-titulo {
+        display: none;
+    }
+
+    .nav-menu{
+        align-items: center;
+        width: 100%;
+    }
+}
