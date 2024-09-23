@@ -31,7 +31,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -43,6 +43,10 @@
     --cor-hover: rgb(206, 203, 203);
     --espaco-primario: 2.5rem;
 }
+
+html {
+    font-size: 16px; /* 1rem = 16px */
+  }
 
 body {
     height: 100vh;
@@ -107,11 +111,19 @@ nav li {
 }
 
 @media (max-width: 768px){
+
+    /* diminui o tamanho dos rem tudo ass: jhonata */
+    html { 
+        font-size: 10px; /* 1rem = 10px */
+      }
+
     .nav-titulo {
         display: none;
     }
 
     .nav-menu{
+        display: flex;
+        justify-content: center;
         align-items: center;
         width: 100%;
     }
