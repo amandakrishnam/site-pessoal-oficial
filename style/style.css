@@ -27,6 +27,7 @@ body {
     width: auto;
     background-color: var(--cor-fundo);
     font-family: var(--fonte-texto);
+    position: relative;
 }
 
 nav {
@@ -82,9 +83,10 @@ footer{
         width: 100%;
     }
 
-
     footer{
         display: block;
+        width: 100%;
+        position: absolute;
     }
 
     .rodape{
