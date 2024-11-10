@@ -85,7 +85,7 @@ footer {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 10px 10px 4px var(--cor-btn-hover);
     transition: 0.3s;
     height: 300px;
     width: 280px;
@@ -93,7 +93,7 @@ footer {
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 20px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
