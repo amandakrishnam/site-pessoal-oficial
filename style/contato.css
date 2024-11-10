@@ -1,5 +1,6 @@
 .secao-contato {
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -37,6 +38,7 @@ p {
 .links-redes-sociais a {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
     color: var(--cor-texto);
     padding: 0.5rem;
@@ -88,7 +90,7 @@ input:focus, textarea:focus {
 
 textarea {
     resize: none;
-    height: 200px;
+    height: 180px;
 }
 
 /* Botão */
