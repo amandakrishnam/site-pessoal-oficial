@@ -1,57 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(reset.css);
-@import url(contato.css);
 @import url(projetos.css);
 @import url(sobre.css);
-
-
-/* Estilizando a barra de rolagem */
-/* ::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
-} */
-
-
-/* ::-webkit-scrollbar-track {
-    background: transparent;
-} */
-
-
-/* ::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-} */
+@import url(contato.css);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 :root {
-    --font-family-titulo: "Roboto Condensed", sans-serif;
-    --font-family-texto: "Quicksand", sans-serif;
-    --cor-primaria: black;
-    --cor-secundaria: rgb(171, 170, 170);
-    --cor-terciaria: rgba(149, 147, 150, 0.334);
-    --cor-hover: rgb(206, 203, 203);
-    --espaco-primario: 2.5rem;
+    --cor-fonte: #141414;
+    --cor-fundo: #86A69D;
+    --cor-footer: #65a694;
+    --cor-btn:#F2C6C2;
+    --cor-btn-hover:#F28585;
+    --cor-secundaria: #F2E8DF;
+    --fonte-titulo: "Poppins", sans-serif;
+    --fonte-texto: "Roboto Condensed", sans-serif;
 }
 
 html {
-    font-size: 16px; /* 1rem = 16px */
+    font-size: 1rem; /* 1rem = 16px */
   }
 
 body {
-    height: 100vh;
+    height: 100%;
     width: auto;
-    font-family: var(--font-family-texto);
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-texto);
 }
 
 nav {
@@ -59,65 +38,49 @@ nav {
     align-items: center;
     width: 100%;
     padding: 2rem;
-    font-family: var(--fonte-family-texto);
+    font-family: var(--fonte-texto);
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 500;
     top: 0;
     position: sticky;
-    background: white;
-}
-
-.nav-titulo {
-    width: 50%;
-    font-family: var(--font-family-titulo);
-    color: var(--cor-primaria);
-}
-
-.menu-destaque {
-    color: var(--cor-primaria);
-
-    &:visited {
-        color: var(--cor-primaria);
-    }
+    background: var(--cor-fundo);
 }
 
 .nav-menu {
-    width: 50%;
-    color: var(--cor-secundaria);
+    width: 100%;
 }
 
 a {
     text-decoration: none;
-    color: var(--cor-secundaria);
-}
-
-nav a:visited {
-    color: var(--cor-secundaria);
+    color: var(--cor-fonte);
 }
 
 nav a:hover {
-    color: var(--cor-primaria);
     cursor: pointer;
 }
 
 nav ul {
     display: flex;
     justify-content: flex-end;
-    gap: var(--espaco-primario);
+    gap: 2.5rem;
 }
 
 nav li {
     list-style: none;
 }
 
-@media (max-width: 768px){
+footer{
+    display: none;
+}
+
+@media (max-width: 992px){
 
     /* diminui o tamanho dos rem tudo ass: jhonata */
     html { 
         font-size: 10px; /* 1rem = 10px */
       }
 
-    .nav-titulo {
+    .nav-titulo .menu-destaque{
         display: none;
     }
 
@@ -126,5 +89,27 @@ nav li {
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+
+
+    footer{
+        display: block;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cor-footer);
+        padding: 8px 0;
+    }
+
+    .texto-rodape{
+        text-align: center;
+    }
+
+    .icones-rodape{
+        display: flex;
+        justify-content: center;
+        gap: 8px;
     }
 }
