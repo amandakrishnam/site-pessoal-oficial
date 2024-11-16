@@ -1,5 +1,5 @@
 .secao-contato {
-    width: 100vw;
+    height: min-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
